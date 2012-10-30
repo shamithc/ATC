@@ -30,11 +30,17 @@
           </a>
           <a class="brand" href="#">Asian Trading Company</a>
           <div class="container nav-collapse">
-            <ul class="nav">
+
+            <% if current_user %>
+              <%= render "layouts/#{current_user.role_user.role.name.downcase}" %>
+            <% end %>
+
+
+            <ul class="nav1">
               <% if user_signed_in? %>
-                <li>Signed in as <%= current_user.email %>. Not you? <%= link_to "Sign out", destroy_user_session_path %></li>              
+                <li>Signed in as <%= current_user.email %>. Not you? <%= link_to "Sign out", destroy_user_session_path, :method => 'DELETE' %></li>              
               <% else %>
-                <li> <%= link_to "Sign up", new_user_registration_path %></li>
+                <%= signup_link %>
                 <li><%= link_to "Sign in", new_user_session_path %></li>
               <% end %>
             </ul>
@@ -52,15 +58,17 @@
               <%= yield %>
             </div>
             <div class="span3">
-             <!-- <div class="well sidebar-nav">
-                <h3>Sidebar</h3>
-                <ul class="nav nav-list">
-                  <li class="nav-header">Sidebar</li>
-                  <li><%= link_to "Link1", "/path1"  %></li>
-                  <li><%= link_to "Link2", "/path2"  %></li>
-                  <li><%= link_to "Link3", "/path3"  %></li>
-                </ul>
-              </div> --><!--/.well -->
+              <% if params[:action]=='list_users' or params[:action]=='list_admin' or params[:action]=='list_manager' or params[:action]=='list_employee' %>
+                <div class="well sidebar-nav">
+                  <h3>Role</h3>
+                  <ul class="nav nav-list">
+                    <li class="nav-header">Role</li>
+                    <li><%= link_to "Administrator", list_admin_admin_index_path  %></li>
+                    <li><%= link_to "Manager", list_manager_admin_index_path  %></li>
+                    <li><%= link_to "Employee", list_employee_admin_index_path  %></li>
+                  </ul>
+                </div> <!--/.well -->
+              <% end %>  
             </div><!--/span-->
         </div><!--/row-->
       </div><!--/content-->

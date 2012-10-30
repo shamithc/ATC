@@ -1,0 +1,49 @@
+<%- model_class = User.new.class -%>
+<div class="page-header">
+  <h1><%=t '.title', :default =>"Employees Under #{@manager.email}" %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:email) %></th>
+      <th><%= model_class.human_attribute_name(:sign_in_count) %></th>
+      <th><%= model_class.human_attribute_name(:Role) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+        <% @employees.each do |employee| %>
+      <tr>        
+        <td><%= link_to employee.email, '' %></td>
+        <td><%= employee.sign_in_count %></td>
+        <td><%= employee.role_user.role.name %></td>
+        <td>
+
+
+
+          <div class="btn-group">
+                <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Action <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="<%= list_customers_employee_manager_path(employee) %>">Customers</a></li>
+                  <li></li>
+                  <li class="divider"></li>
+                  <li><%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      delete_user_admin_path(employee),
+                      :method => :delete,
+                      :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
+                      :class => 'btn btn-mini btn-danger' %></li>
+                </ul>
+              </div>
+          <%#= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_customer_path(customer), :class => 'btn btn-mini' %>
+          
+        </td>
+      </tr>
+    <% end %>
+      
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_user_registration_path,
+            :class => 'btn btn-primary' %>

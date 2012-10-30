@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  contact_no: 1
+  area: 1
+  land_mark: MyText
+  call_type_id: 1
+  status_id: 1
+  contacted_person: MyString
+  designation_id: 
+  site_contact_no: 1
+  visited_location_id: 1
+  brand_id: 1
+  probable_bags_no: 1
+  dispatch_date: 2012-09-29
+  call_type_id: 1
+  next_followup_date: 2012-09-29
+  followup_id: 1
+  site_nature_id: 1
+
+two:
+  name: MyString
+  contact_no: 1
+  area: 1
+  land_mark: MyText
+  call_type_id: 1
+  status_id: 1
+  contacted_person: MyString
+  designation_id: 
+  site_contact_no: 1
+  visited_location_id: 1
+  brand_id: 1
+  probable_bags_no: 1
+  dispatch_date: 2012-09-29
+  call_type_id: 1
+  next_followup_date: 2012-09-29
+  followup_id: 1
+  site_nature_id: 1

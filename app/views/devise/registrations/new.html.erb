@@ -1,4 +1,4 @@
- sdasd<h2>Sign up</h2>
+ <h2>Sign up</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -6,6 +6,8 @@
   <div><%= f.label :email %><br />
   <%= f.email_field :email %></div>
 
+   <div>Type<br />      
+      <%=   f.collection_select(:role_id, Role.all, :id, :name, :prompt => true) %></div>
   <div><%= f.label :password %><br />
   <%= f.password_field :password %></div>
 
@@ -16,3 +18,4 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+

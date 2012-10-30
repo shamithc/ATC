@@ -1,4 +1,4 @@
-.navbar .nav {
+.navbar .nav1 {
     display: block;
     float: right;
     left: 0;
@@ -6,6 +6,44 @@
     position: relative;
 }
 
-.nav > li > a {
+.nav1 > li > a {
     display: -moz-inline-box;
+}
+
+
+.navbar .nav1 > li > a {
+    color: #999999;
+    float: none;
+    line-height: 19px;
+    padding: 9px 10px 11px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav1 {
+    list-style: none outside none;
+}
+
+.well {
+    background-color: #F5F5F5;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin: 71px 9px;
+    min-height: 20px;
+    padding: 10px 8px;
+}
+.table th.tr_heading{
+    background: red;
+
+}
+
+
+
+.table th, .table td {
+    border-top: 1px solid #DDDDDD;
+    line-height: 18px;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
 }

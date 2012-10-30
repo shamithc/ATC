@@ -1,0 +1,11 @@
+<%- model_class = User.new.class -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => "Set Manager To #{@employee.email}" %></h1>
+</div>
+
+<%= form_tag do %>
+<% @managers.each do |manager| %>
+	<%= radio_button_tag :manager_id, manager.user.id %> <%= manager.user.email %>
+    <%= submit_tag "Set Manager" %>
+<% end %>
+<% end %>

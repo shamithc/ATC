@@ -11,7 +11,56 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120924191757) do
+ActiveRecord::Schema.define(:version => 20121014060223) do
+
+  create_table "brands", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "call_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "customers", :force => true do |t|
+    t.string   "name"
+    t.integer  "contact_no"
+    t.integer  "area"
+    t.text     "land_mark"
+    t.integer  "call_type_id"
+    t.integer  "status_id"
+    t.string   "contacted_person"
+    t.integer  "designation_id"
+    t.integer  "site_contact_no"
+    t.integer  "visited_location_id"
+    t.integer  "brand_id"
+    t.integer  "probable_bags_no"
+    t.date     "dispatch_date"
+    t.date     "next_followup_date"
+    t.integer  "followup_id"
+    t.integer  "site_nature_id"
+    t.integer  "user_id"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.text     "address"
+  end
+
+  create_table "followups", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "next_followups", :force => true do |t|
+    t.date     "next_followup_date"
+    t.text     "note"
+    t.integer  "customer_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
 
   create_table "role_users", :force => true do |t|
     t.integer  "user_id"
@@ -21,6 +70,18 @@ ActiveRecord::Schema.define(:version => 20120924191757) do
   end
 
   create_table "roles", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "site_natures", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "statuses", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -39,10 +100,18 @@ ActiveRecord::Schema.define(:version => 20120924191757) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.integer  "role_id"
     t.string   "name"
+    t.integer  "manager_id"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "visited_locations", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end

@@ -1,0 +1,115 @@
+<%= form_for @customer, :html => { :class => 'form-horizontal' } do |f| %>
+    <%#= f.error_messages %>
+    <%= error_messages_for :customer %>
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :contact_no, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :contact_no, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :area, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :area, :class => 'number_field' %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :address, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :address,:size => "24x6", :class => 'text_area' %>
+    </div>
+  </div>
+
+
+  <div class="control-group">
+    <%= f.label :land_mark, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :land_mark,:size => "24x6", :class => 'text_area' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :call_type_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :call_type_id, CallType.all, :id, :name,:prompt => true, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :status_id, :class => 'control-label' %>
+    <div class="controls">
+       <%= f.collection_select :status_id, Status.all, :id, :name,:prompt => true, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :contacted_person, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :contacted_person, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :designation_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.select(:designation_id, ['Owner', 'Contractor', 'Architect', 'Mestri'],:prompt => true) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :site_contact_no, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :site_contact_no, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :visited_location_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :visited_location_id, VisitedLocation.all, :id, :name,:prompt => true, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :brand_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :brand_id, Brand.all, :id, :name,:prompt => true, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :probable_bags_no, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :probable_bags_no, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :dispatch_date, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :dispatch_date, :class => 'date_select' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :next_followup_date, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :next_followup_date, :class => 'date_select' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :followup_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :followup_id, Followup.all, :id, :name,:prompt => true, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :site_nature_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :site_nature_id, SiteNature.all, :id, :name,:prompt => true, :class => 'number_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                @location, :class => 'btn' %>
+  </div>
+<% end %>
