@@ -1,0 +1,3 @@
+class SaleStatus < ActiveRecord::Base
+  attr_accessible :name
+end

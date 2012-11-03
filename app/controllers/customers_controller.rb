@@ -5,7 +5,7 @@ class CustomersController < ApplicationController
   # GET /customers
   # GET /customers.json
   def index
-    @customers = Customer.page(params[:page]).per(3)
+    @customers = Customer.page(params[:page]) #.per(10)
     # render text: Customer.all.to_xlsx and return
     respond_to do |format|
       format.html # index.html.erb

@@ -1,60 +1,71 @@
 # This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+# The data can then be loaded with the rake db:seed (or find_or_create_by_name!d alongside the db with db:setup).
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
- # Role.create(:name => 'Admin')
-   # Role.create(:name => 'Manager') 
-   # Role.create(:name => 'Employee')
+#   cities = City.find_or_create_by_name!([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.find_or_create_by_name!(name: 'Emanuel', city: cities.first)
+ # Role.find_or_create_by_name!(:name => 'Admin')
+   # Role.find_or_create_by_name!(:name => 'Manager') 
+   # Role.find_or_create_by_name!(:name => 'Employee')
 puts 'Brand'
 
-Brand.create(name: 'Acc')
-Brand.create(name: 'Ambuja')
-Brand.create(name: 'Ultratech')
-Brand.create(name: 'Chettynadu')
+Brand.find_or_create_by_name!(name: 'Acc')
+Brand.find_or_create_by_name!(name: 'Ambuja')
+Brand.find_or_create_by_name!(name: 'Ultratech')
+Brand.find_or_create_by_name!(name: 'Chettynadu')
 
 puts 'CallType'
 
-CallType.create(name: 'Hot')
-CallType.create(name: 'Warm')
-CallType.create(name: 'Cold')
+CallType.find_or_create_by_name!(name: 'Hot')
+CallType.find_or_create_by_name!(name: 'Warm')
+CallType.find_or_create_by_name!(name: 'Cold')
 
 puts 'Followup'
 
-Followup.create(name: 'check1')
-Followup.create(name: 'check2')
-Followup.create(name: 'check3')
+Followup.find_or_create_by_name!(name: 'check1')
+Followup.find_or_create_by_name!(name: 'check2')
+Followup.find_or_create_by_name!(name: 'check3')
 
 
 puts 'SiteNature'
 
-SiteNature.create(name: 'Independent house')
-SiteNature.create(name: 'Building')
-SiteNature.create(name: 'Flat')
-SiteNature.create(name: 'Shopping center')
-SiteNature.create(name: 'Bridge')
-SiteNature.create(name: 'Others')
+SiteNature.find_or_create_by_name!(name: 'Independent house')
+SiteNature.find_or_create_by_name!(name: 'Building')
+SiteNature.find_or_create_by_name!(name: 'Flat')
+SiteNature.find_or_create_by_name!(name: 'Shopping center')
+SiteNature.find_or_create_by_name!(name: 'Bridge')
+SiteNature.find_or_create_by_name!(name: 'Others')
 
 puts 'Status'
 
-Status.create(name: 'Individual Customer')
-Status.create(name: 'Sub Dealer')
-Status.create(name: 'Cements Product Company')
-Status.create(name: 'Contractor')
-Status.create(name: 'Builder')
-Status.create(name: 'Others')
+Status.find_or_create_by_name!(name: 'Individual Customer')
+Status.find_or_create_by_name!(name: 'Sub Dealer')
+Status.find_or_create_by_name!(name: 'Cements Product Company')
+Status.find_or_create_by_name!(name: 'Contractor')
+Status.find_or_create_by_name!(name: 'Builder')
+Status.find_or_create_by_name!(name: 'Others')
 
 
 
 puts 'VisitedLocation'
 
-VisitedLocation.create(name: 'Office') 
-VisitedLocation.create(name: 'On Going Site') 
+VisitedLocation.find_or_create_by_name!(name: 'Office') 
+VisitedLocation.find_or_create_by_name!(name: 'On Going Site') 
 
 puts 'Roles'
 
-Role.create(name: 'Admin')
-Role.create(name: 'Manager')
-Role.create(name: 'Employee')
+Role.find_or_create_by_name!(name: 'Admin')
+Role.find_or_create_by_name!(name: 'Manager')
+Role.find_or_create_by_name!(name: 'Employee')
+
+
+puts 'SaleStatus'
+
+SaleStatus.find_or_create_by_name!(name: 'Live')
+SaleStatus.find_or_create_by_name!(name: 'Won')
+SaleStatus.find_or_create_by_name!(name: 'Lost')
+
+puts 'PaymentType'
+PaymentType.find_or_create_by_name!(name: 'Cash')
+PaymentType.find_or_create_by_name!(name: 'Credit')

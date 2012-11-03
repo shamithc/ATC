@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
-  has_one :role_user, :dependent => :destroy
+  has_one :role_user, :dependent => :destroy  
   has_many :customers
 
   has_many :employee, :class_name => 'User',  :foreign_key => 'manager_id'
