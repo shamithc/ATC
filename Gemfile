@@ -7,7 +7,7 @@ gem 'rails', '3.2.6'
 
 gem 'mysql2'
 gem "twitter-bootstrap-rails"
-gem 'devise'
+#gem 'devise'
 gem "dynamic_form"
 gem 'ransack'
 gem 'axlsx'
@@ -15,6 +15,8 @@ gem 'acts_as_xlsx'
 gem 'axlsx_rails'
 gem 'kaminari'
 
+
+gem 'devise', :path => 'vendor/plugins/devise-2.1.2/'
 
 group :production do
  gem 'pg'
