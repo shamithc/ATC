@@ -16,7 +16,7 @@ gem 'axlsx_rails'
 gem 'kaminari'
 
 
-gem 'devise', :path => 'vendor/plugins/devise-2.1.2/'
+gem 'devise', :path => 'lib/devise-2.1.2/'
 
 group :production do
  gem 'pg'
