@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(:version => 20121106162710) do
     t.integer  "call_type_id"
     t.integer  "status_id"
     t.string   "contacted_person"
-    t.integer  "designation_id"
     t.integer  "visited_location_id"
     t.integer  "brand_id"
     t.integer  "probable_bags_no"
@@ -49,6 +48,7 @@ ActiveRecord::Schema.define(:version => 20121106162710) do
     t.string   "contact_no"
     t.string   "area"
     t.string   "site_contact_no"
+    t.string   "designation_id"
   end
 
   create_table "followups", :force => true do |t|
