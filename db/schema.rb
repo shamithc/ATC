@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121103074613) do
+ActiveRecord::Schema.define(:version => 20121106162710) do
 
   create_table "brands", :force => true do |t|
     t.string   "name"
@@ -27,14 +27,11 @@ ActiveRecord::Schema.define(:version => 20121103074613) do
 
   create_table "customers", :force => true do |t|
     t.string   "name"
-    t.integer  "contact_no"
-    t.integer  "area"
     t.text     "land_mark"
     t.integer  "call_type_id"
     t.integer  "status_id"
     t.string   "contacted_person"
     t.integer  "designation_id"
-    t.integer  "site_contact_no"
     t.integer  "visited_location_id"
     t.integer  "brand_id"
     t.integer  "probable_bags_no"
@@ -49,6 +46,9 @@ ActiveRecord::Schema.define(:version => 20121103074613) do
     t.integer  "sale_status_id"
     t.integer  "payment_type_id"
     t.text     "payment_day"
+    t.string   "contact_no"
+    t.string   "area"
+    t.string   "site_contact_no"
   end
 
   create_table "followups", :force => true do |t|
