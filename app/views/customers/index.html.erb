@@ -25,10 +25,10 @@
         <td><%= customer.probable_bags_no %></td>
         <td><%= customer.dispatch_date %></td>
         <td><%= customer.call_type.name %></td>
-        <td><%= customer.status.name %></td>
+        <td><%= customer.status.name rescue nil %></td>
         <td><%= customer.next_followup_date %></td>
-        <td><%= customer.sale_status.name %></td>
-        <td><%= customer.payment_type.name %></td>
+        <td><%= customer.sale_status.name rescue nil %></td>
+        <td><%= customer.payment_type.name rescue nil %></td>
         <% if customer.payment_type_id == 1%>
           <td></td>
         <% else %>

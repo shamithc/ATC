@@ -1,4 +1,4 @@
-              
+
       <%- model_class = @customer.class -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human %></h1>
@@ -65,7 +65,7 @@
           <dt><strong><%= model_class.human_attribute_name(:call_type_id) %>:</strong></dt>
           <dd><%= @customer.call_type.name %></dd>
           <dt><strong><%= model_class.human_attribute_name(:status_id) %>:</strong></dt>
-          <dd><%= @customer.status.name %></dd>
+          <dd><%= @customer.status.name rescue nil %></dd>
           <dt><strong><%= model_class.human_attribute_name(:contacted_person) %>:</strong></dt>
           <dd><%= @customer.contacted_person %></dd>
           <dt><strong><%= model_class.human_attribute_name(:designation_id) %>:</strong></dt>
@@ -73,7 +73,7 @@
           <dt><strong><%= model_class.human_attribute_name(:site_contact_no) %>:</strong></dt>
           <dd><%= @customer.site_contact_no %></dd>
           <dt><strong><%= model_class.human_attribute_name(:visited_location_id) %>:</strong></dt>
-          <dd><%= @customer.visited_location.name %></dd>
+          <dd><%= @customer.visited_location.name rescue nil %></dd>
         </dl>
       </p>
     </div>
@@ -91,7 +91,7 @@
               :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
               :class => 'btn btn-danger' %>
 
-  <%= link_to 'Next Follow up', 
+  <%= link_to 'Next Follow up',
               next_followup_customer_path(@customer), :class => 'btn btn-primary'  %>
 </div>
 
@@ -102,7 +102,7 @@
 
 
 
-<!-- 
+<!--
 
 
 

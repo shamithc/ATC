@@ -1,11 +1,14 @@
   class Customer < ActiveRecord::Base
   acts_as_xlsx
-  attr_accessible :area, :brand_id, :call_type_id, :call_type_id, :contact_no, 
-                  :contacted_person, :designation_id, :dispatch_date, :followup_id, 
-                  :land_mark, :name, :next_followup_date, :probable_bags_no, 
+  attr_accessible :area, :brand_id, :call_type_id, :call_type_id, :contact_no,
+                  :contacted_person, :designation_id, :dispatch_date, :followup_id,
+                  :land_mark, :name, :next_followup_date, :probable_bags_no,
                   :site_contact_no, :site_nature_id, :status_id, :visited_location_id,
                   :address, :sale_status_id, :payment_type_id, :payment_day
-  validates :area, :brand_id, :call_type_id,:contact_no, :contacted_person, :designation_id, :dispatch_date, :followup_id, :land_mark, :name, :next_followup_date, :probable_bags_no, :site_contact_no, :site_nature_id, :status_id, :visited_location_id, :presence => true
+  validates :area, :brand_id, :call_type_id,:contact_no,
+            :dispatch_date,
+            :followup_id, :name, :next_followup_date,
+            :probable_bags_no, :site_nature_id, :presence => true
 
   # acts_as_xlsx
 
@@ -32,6 +35,6 @@
   end
 
 
-  
+
 
 end
