@@ -6,17 +6,26 @@ gem 'rails', '3.2.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-gem "twitter-bootstrap-rails"
+# gem "twitter-bootstrap-rails"
+# gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git', :branch => 'static'
 #gem 'devise'
+# gem 'sass-rails', '~> 3.2'
+gem 'bootstrap-sass', '~> 2.2.2.0'
 gem "dynamic_form"
 gem 'ransack'
 gem 'axlsx'
 gem 'acts_as_xlsx'
 gem 'axlsx_rails'
 gem 'kaminari'
+gem 'execjs'
+gem 'libv8' , '3.11.8.0'
+gem 'therubyracer'
+# gem 'johnson'
 
 
 gem 'devise', :path => 'lib/devise-2.1.2/'
+#gem 'therubyracer_for_windows', :path => 'vendor/plugins/therubyracer_for_windows/', :platforms => :ruby
+
 
 group :production do
  gem 'pg'
