@@ -80,6 +80,14 @@
 	"buffers":
 	[
 		{
+			"file": "app/controllers/customers_controller.rb",
+			"settings":
+			{
+				"buffer_size": 3780,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "app/models/role.rb",
 			"settings":
 			{
@@ -88,10 +96,18 @@
 			}
 		},
 		{
-			"file": "app/assets/javascripts/customers.js",
+			"file": "app/views/search/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 769,
+				"buffer_size": 1782,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/search_controller.rb",
+			"settings":
+			{
+				"buffer_size": 433,
 				"line_ending": "Unix"
 			}
 		}
@@ -168,6 +184,8 @@
 	},
 	"file_history":
 	[
+		"/home/user/Rails/Asian_trading_company/Asian_trading/asian.sublime-project",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/assets/javascripts/customers.js",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/controllers/manager_controller.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/controllers/customers_controller.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/admin/list_admin.html.erb",
@@ -181,7 +199,6 @@
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/customers/show.html.erb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/db/migrate/20120929152631_create_customers.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/customers/index.xlsx.axlsx",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/asian.sublime-project",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/controllers/application_controller.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/test/test_helper.rb",
 		"/home/user/Desktop/JQuery-plugin/index.html",
@@ -191,7 +208,6 @@
 		"/var/www/yuva27/beta1/correct2.php",
 		"/var/www/yuva27/beta1/correct.php",
 		"/var/www/yuva27/beta1/CAlert.php",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/app/assets/javascripts/customers.js",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/search/index.html.erb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/models/customer.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/manager/list_customers.html.erb",
@@ -351,11 +367,39 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "app/controllers/customers_controller.rb",
+					"settings":
+					{
+						"buffer_size": 3780,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								533,
+								533
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
 					"file": "app/models/role.rb",
 					"settings":
 					{
@@ -381,25 +425,54 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/assets/javascripts/customers.js",
+					"buffer": 2,
+					"file": "app/views/search/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 769,
+						"buffer_size": 1782,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								592,
-								592
+								386,
+								386
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/search_controller.rb",
+					"settings":
+					{
+						"buffer_size": 433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								433,
+								433
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -452,6 +525,10 @@
 		"selected_items":
 		[
 			[
+				"search/in",
+				"app/views/search/index.html.erb"
+			],
+			[
 				"mi/",
 				"db/migrate/20120929152631_create_customers.rb"
 			],
@@ -489,7 +566,7 @@
 		[
 			[
 				"",
-				"/home/user/Rails/QBurst/WFH/Nov-10/brokersoft/trunk/BBC/BBC.sublime-project"
+				"/home/user/Rails/My-Room/Backbone/raffler/backbone.sublime-project"
 			]
 		],
 		"width": 380.0

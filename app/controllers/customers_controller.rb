@@ -30,9 +30,9 @@ class CustomersController < ApplicationController
   end
 
   def get_back_url
-    @location = customers_path if current_user.role_user.role.name == "Admin" 
-    @location = list_customers_manager_index_path if current_user.role_user.role.name == "Manager" 
-    @location = list_customers_employee_index_path if current_user.role_user.role.name == "Employee" 
+    @location = customers_path if current_user.role_user.role.name == "Admin"
+    @location = list_customers_manager_index_path if current_user.role_user.role.name == "Manager"
+    @location = list_customers_employee_index_path if current_user.role_user.role.name == "Employee"
   end
 
   # GET /customers/new
@@ -118,9 +118,9 @@ class CustomersController < ApplicationController
     location = list_customers_employee_index_path if current_user.role_user.role.name.eql?("Employee")
     return location
 
-  end 
+  end
 
-  private 
+  private
 
   def admin_authorization
     redirect_to root_url unless current_user.role_user.role.name.eql?("Admin")

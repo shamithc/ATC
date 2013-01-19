@@ -1,10 +1,4 @@
 <%- model_class = Customer.new.class -%>
-
-
-
-
-
-
 <%= search_form_for @search, :url => search_search_path,
                         :html => {:method => :post} do |f| %>
   <%= f.condition_fields do |c| %>
@@ -14,13 +8,7 @@
   <div class="actions"><%= f.submit "Search" %></div>
 <% end %>
 
-
-
-
-
-
-
-<div class="page-header">
+  <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
 </div>
 <table class="table table-striped">
@@ -39,13 +27,13 @@
   <tbody>
     <% @customers.each do |customer| %>
       <tr>
-        
+
         <td><%= link_to customer.name, customer_path(customer) %></td>
         <td><%= customer.contact_no %></td>
         <td><%= customer.probable_bags_no %></td>
         <td><%= customer.dispatch_date %></td>
-        <td><%= customer.call_type.name %></td>
-        <td><%= customer.status.name %></td>
+        <td><%= customer.call_type.name rescue nil %></td>
+        <td><%= customer.status.name rescue nil %></td>
         <td><%= customer.next_followup_date %></td>
         <td><%= customer.id %></td>
 

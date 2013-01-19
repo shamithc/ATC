@@ -1,4 +1,4 @@
-class SearchController < ApplicationController
+class   SearchController < ApplicationController
   def index
   	@search = Customer.search(params[:q])  #page(params[:page]).per(3)
   	@customers = @search.result
