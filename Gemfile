@@ -19,6 +19,7 @@ gem 'axlsx_rails'
 gem 'kaminari'
 gem 'execjs'
 gem 'libv8' , '3.11.8.0'
+gem 'sqlite3'
 # gem 'therubyracer'
 # gem 'johnson'
 
