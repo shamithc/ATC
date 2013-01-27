@@ -10,7 +10,16 @@ gem 'mysql2'
 # gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git', :branch => 'static'
 #gem 'devise'
 # gem 'sass-rails', '~> 3.2'
+
+#New line
+
+gem 'sass-rails', '~> 3.2'
 gem 'bootstrap-sass', '~> 2.2.2.0'
+
+#End 
+
+
+#gem 'bootstrap-sass', '~> 2.2.2.0'
 gem "dynamic_form"
 gem 'ransack'
 gem 'axlsx'
@@ -20,7 +29,7 @@ gem 'kaminari'
 gem 'execjs'
 gem 'libv8' , '3.11.8.0'
 gem 'sqlite3'
-gem "less-rails"
+#gem "less-rails"
 #gem 'therubyracer'
 # gem 'johnson'
 
@@ -36,7 +45,7 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+  #gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
