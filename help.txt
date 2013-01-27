@@ -1,1 +1,1 @@
-http://stackoverflow.com/questions/8740868/mysql2-gem-compiled-for-wrong-mysql-client-library
+http://asiantradingcompany.herokuapp.com/users/sign_in
