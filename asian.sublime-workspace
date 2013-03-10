@@ -80,34 +80,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/customers_controller.rb",
+			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 3780,
+				"buffer_size": 1176,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/models/role.rb",
+			"file": "app/controllers/session_controller.rb",
 			"settings":
 			{
-				"buffer_size": 254,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/search/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 1782,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/search_controller.rb",
-			"settings":
-			{
-				"buffer_size": 433,
+				"buffer_size": 761,
 				"line_ending": "Unix"
 			}
 		}
@@ -118,6 +102,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"Snippet: ",
+				"Snippet: directory()"
+			],
 			[
 				"sn",
 				"Snippet: Create controller class"
@@ -141,10 +129,6 @@
 			[
 				"f",
 				"File: Revert"
-			],
-			[
-				"Snippet: ",
-				"Snippet: Lorem ipsum"
 			],
 			[
 				"ru",
@@ -185,9 +169,17 @@
 	"file_history":
 	[
 		"/home/user/Rails/Asian_trading_company/Asian_trading/asian.sublime-project",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/config/initializers/session_store.rb",
+		"/home/user/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/config/environments/production.rb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/assets/javascripts/application.js",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/Gemfile",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/controllers/search_controller.rb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/search/index.html.erb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/models/role.rb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/controllers/customers_controller.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/assets/javascripts/customers.js",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/controllers/manager_controller.rb",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/app/controllers/customers_controller.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/admin/list_admin.html.erb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/db/migrate/20121106162710_change_customers.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/admin/list_users.html.erb",
@@ -208,7 +200,6 @@
 		"/var/www/yuva27/beta1/correct2.php",
 		"/var/www/yuva27/beta1/correct.php",
 		"/var/www/yuva27/beta1/CAlert.php",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/search/index.html.erb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/models/customer.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/manager/list_customers.html.erb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/db/migrate/20121103074613_create_payment_types.rb",
@@ -266,7 +257,6 @@
 		"/home/user/Rails/QBurst/BBC-codebase/app/controllers/contacts_controller.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/search/_condition_fields.html.erb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/layouts/_admin.html.erb",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/app/controllers/search_controller.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/helpers/application_helper.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/assets/javascripts/search.js.coffee",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/controllers/registration_controller.rb",
@@ -305,13 +295,7 @@
 		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/views/contacts/_add_notes.html.erb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/config/application.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/config/initializers/mime_types.rb",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/admin/list_customers_manager.html.erb",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/app/assets/stylesheets/home.css",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/db/migrate/20120923120052_add_name_to_users.rb",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/app/models/visited_location.rb",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/app/models/status.rb",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/app/models/site_nature.rb",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/app/models/call_type.rb"
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/admin/list_customers_manager.html.erb"
 	],
 	"find":
 	{
@@ -329,6 +313,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"lib",
 			"sdsdfsdf:",
 			"<div class=\"span1\">sdsdfsdf:</div>",
 			"<b",
@@ -367,23 +352,22 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/customers_controller.rb",
+					"file": "config/routes.rb",
 					"settings":
 					{
-						"buffer_size": 3780,
+						"buffer_size": 1176,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								533,
-								533
+								0,
+								0
 							]
 						],
 						"settings":
@@ -393,85 +377,31 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 714.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/models/role.rb",
+					"file": "app/controllers/session_controller.rb",
 					"settings":
 					{
-						"buffer_size": 254,
+						"buffer_size": 761,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								196,
-								196
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/search/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 1782,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								386,
-								386
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/controllers/search_controller.rb",
-					"settings":
-					{
-						"buffer_size": 433,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								433,
-								433
+								756,
+								756
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -525,6 +455,10 @@
 		"selected_items":
 		[
 			[
+				"ro",
+				"config/routes.rb"
+			],
+			[
 				"search/in",
 				"app/views/search/index.html.erb"
 			],
@@ -566,7 +500,7 @@
 		[
 			[
 				"",
-				"/home/user/Rails/My-Room/Backbone/raffler/backbone.sublime-project"
+				"/home/user/Backbone/backbone.sublime-project"
 			]
 		],
 		"width": 380.0
