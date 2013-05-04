@@ -120,6 +120,10 @@ class CustomersController < ApplicationController
 
   end
 
+  def load_brand
+    # @
+  end
+
   private
 
   def admin_authorization
