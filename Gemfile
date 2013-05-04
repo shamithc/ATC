@@ -39,7 +39,7 @@ gem 'devise', :path => 'lib/devise-2.1.2/'
 
 
 group :production do
- gem 'pg'
+ #gem 'pg'
 end
 
 # Gems used only for assets and not required
