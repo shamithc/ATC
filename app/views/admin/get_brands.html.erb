@@ -1,0 +1,28 @@
+<div class="span9">
+  <div class="page-header">
+    <h1>Brands of <%= @item.name %></h1>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>
+          <span title="translation missing: en.helpers.actions" class="translation_missing">Actions</span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @brands.each do |brand| %>
+        <tr class="success">
+          <td><a href="<%#= get_brands_path(item) %>"><%= brand.name %></a></td>
+          <td>
+            <a rel="nofollow" data-method="delete" data-confirm="Are you sure?" class="btn btn-mini btn-danger" href="<%= delete_brand_admin_path(brand) %>"><span title="translation missing: en.helpers.links.destroy" class="translation_missing">Destroy</span></a>
+          </td>
+        </tr>
+      <% end %>
+  </tbody>
+</table>
+<a class="btn btn-primary" href="<%= new_brand_path(@item) %>">
+  <span title="translation missing: en.helpers.links.new" class="translation_missing">New Brand</span>
+</a>
+</div>

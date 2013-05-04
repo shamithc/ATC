@@ -21,4 +21,29 @@ $(document).ready(function(){
 			$(".payment_day").hide();
 		}
     }
+
+    $('#customer_item_id').change(function() {
+    	// alert('yes')
+    	var self = $(this);
+    	// alert(self.val());
+    	$.ajax({
+          type: "POST",
+          beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'));},
+          // url: '/contacts/'+id+'/add_family_info',
+          url: 'load_brand/'+self.val(),
+          success: function(msg){
+
+          },
+          error: function(){
+          	alert('Yes');
+          }
+        });
+
+    });
 });
+
+
+// jQuery ->
+//   $("a[rel=popover]").popover()
+//   $(".tooltip").tooltip()
+//   $("a[rel=tooltip]").tooltip()

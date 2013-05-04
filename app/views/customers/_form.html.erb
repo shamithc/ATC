@@ -10,15 +10,10 @@
   <div class="control-group">
     <%= f.label :contact_no, :class => 'control-label' %>
     <div class="controls">
-      <%= f.number_field :contact_no, :class => 'number_field' %>
+      <%= f.text_field :contact_no, :class => 'text_field' %>
     </div>
   </div>
-  <div class="control-group">
-    <%= f.label :area, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.number_field :area, :class => 'number_field' %>
-    </div>
-  </div>
+
 
   <div class="control-group">
     <%= f.label :address, :class => 'control-label' %>
@@ -37,13 +32,13 @@
   <div class="control-group">
     <%= f.label :call_type_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.collection_select :call_type_id, CallType.all, :id, :name,:prompt => true, :class => 'number_field' %>
+      <%= f.collection_select :call_type_id, CallType.all, :id, :name,:prompt => true, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :status_id, :class => 'control-label' %>
     <div class="controls">
-       <%= f.collection_select :status_id, Status.all, :id, :name,:prompt => true, :class => 'number_field' %>
+       <%= f.collection_select :status_id, Status.all, :id, :name,:prompt => true, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
@@ -61,25 +56,37 @@
   <div class="control-group">
     <%= f.label :site_contact_no, :class => 'control-label' %>
     <div class="controls">
-      <%= f.number_field :site_contact_no, :class => 'number_field' %>
+      <%= f.text_field :site_contact_no, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :visited_location_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.collection_select :visited_location_id, VisitedLocation.all, :id, :name,:prompt => true, :class => 'number_field' %>
+      <%= f.collection_select :visited_location_id, VisitedLocation.all, :id, :name,:prompt => true, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :area, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :area, :size => "24x6", :class => 'text_field' %>
+    </div>
+  </div>
+    <div class="control-group">
+    <%= f.label :item_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :item_id, Item.all, :id, :name,:prompt => true, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :brand_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.collection_select :brand_id, Brand.all, :id, :name,:prompt => true, :class => 'number_field' %>
+      <%= f.collection_select :brand_id, Brand.all, :id, :name,:prompt => true, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :probable_bags_no, :class => 'control-label' %>
     <div class="controls">
-      <%= f.number_field :probable_bags_no, :class => 'number_field' %>
+      <%= f.text_field :probable_bags_no, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
@@ -97,27 +104,27 @@
   <div class="control-group">
     <%= f.label :followup_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.collection_select :followup_id, Followup.all, :id, :name,:prompt => true, :class => 'number_field' %>
+      <%= f.collection_select :followup_id, Followup.all, :id, :name,:prompt => true, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :site_nature_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.collection_select :site_nature_id, SiteNature.all, :id, :name,:prompt => true, :class => 'number_field' %>
+      <%= f.collection_select :site_nature_id, SiteNature.all, :id, :name,:prompt => true, :class => 'text_field' %>
     </div>
   </div>
 
    <div class="control-group">
     <%= f.label :sale_status_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.collection_select :sale_status_id, SaleStatus.all, :id, :name,:prompt => true, :class => 'number_field' %>
+      <%= f.collection_select :sale_status_id, SaleStatus.all, :id, :name,:prompt => true, :class => 'text_field' %>
     </div>
   </div>
 
   <div class="control-group">
     <%= f.label :payment_type_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.collection_select :payment_type_id, PaymentType.all, :id, :name,:prompt => true, :class => 'number_field' %>
+      <%= f.collection_select :payment_type_id, PaymentType.all, :id, :name,:prompt => true, :class => 'text_field' %>
     </div>
   </div>
 

@@ -1,10 +1,10 @@
 class AdminController < ApplicationController
   before_filter :authenticate_user!
-  before_filter :admin_authorization  
+  before_filter :admin_authorization
 
 
   def index
-  	
+
   end
 
   def list_users
@@ -49,10 +49,10 @@ class AdminController < ApplicationController
       @employee.manager_id = params[:manager_id]
       redirect_to list_employee_admin_index_path and return if @employee.save
     end
-    # render text: @managers.to_json 
+    # render text: @managers.to_json
   end
 
-# list employess under a managers 
+# list employess under a managers
   def list_employees_manager
     @manager = User.find(params[:id])
     @employees = @manager.employee
@@ -88,5 +88,50 @@ class AdminController < ApplicationController
     redirect_to root_url unless current_user.role_user.role.name.eql?("Admin")
   end
 
+  def setting
+    @items = Item.all
+  end
 
+  def new_item
+    @item = Item.new
+  end
+
+  def create_item
+    @item = Item.new(params[:item])
+    if @item.save
+      redirect_to setting_admin_index_path
+    else
+      render action: 'new_item'
+    end
+  end
+
+  def delete_item
+    @item = Item.find params[:id]
+    redirect_to setting_admin_index_path if @item.destroy
+  end
+
+  def get_brands
+    @item = Item.includes(:brands).find params[:item_id]
+    @brands = @item.brands
+  end
+
+  def new_brand
+    @item = Item.find params[:item_id]
+    @brand = @item.brands.build
+  end
+
+  def create_brand
+    @item = Item.find params[:item_id]
+    @brand = @item.brands.build(params[:brand]) #Brand.new params[:brand]
+    if @brand.save
+      redirect_to get_brands_path(@item)
+    else
+      render action: "new_brand"
+    end
+  end
+
+  def delete_brand
+    @brand = Brand.find params[:id]
+    redirect_to get_brands_path(@brand.item) if @brand.destroy
+  end
 end

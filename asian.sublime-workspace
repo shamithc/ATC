@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"fun",
+				"function"
+			],
+			[
 				"rol",
 				"role_user"
 			],
@@ -83,15 +87,31 @@
 			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 1176,
+				"buffer_size": 1560,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/session_controller.rb",
+			"file": "app/views/customers/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 761,
+				"buffer_size": 5140,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/customers.js",
+			"settings":
+			{
+				"buffer_size": 954,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/bootstrap.js.coffee",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		}
@@ -103,6 +123,14 @@
 		"selected_items":
 		[
 			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sid",
+				"View: Toggle Side Bar"
+			],
+			[
 				"Snippet: ",
 				"Snippet: directory()"
 			],
@@ -113,10 +141,6 @@
 			[
 				"set",
 				"Set Syntax: HTML"
-			],
-			[
-				"side",
-				"View: Toggle Side Bar"
 			],
 			[
 				"si",
@@ -151,7 +175,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 530.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -168,6 +192,21 @@
 	},
 	"file_history":
 	[
+		"/home/user/Rails/Asian_trading_company/Asian_trading/db/migrate/20130504150010_add_item_to_customer.rb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/models/brand.rb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/models/item.rb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/customers/new.html.erb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/admin/list_customers_manager.html.erb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/admin/setting.html.erb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/admin/new_brand.html.erb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/admin/new_item.html.erb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/admin/get_brands.html.erb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/controllers/admin_controller.rb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/layouts/_admin.html.erb",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/.gitignore",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/app/controllers/session_controller.rb",
+		"/home/user/Desktop/sishin/www.graceblinds.com",
+		"/home/user/Rails/Asian_trading_company/Asian_trading/help.txt",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/asian.sublime-project",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/config/initializers/session_store.rb",
 		"/home/user/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
@@ -206,7 +245,6 @@
 		"/home/user/Desktop/JQuery-plugin/jquery-plugin.js",
 		"/home/user/Desktop/JQuery-plugin/index.html.erb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/models/user.rb",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/app/controllers/admin_controller.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/config/routes.rb",
 		"/home/user/Rails/QBurst/WFH/brokersoft/trunk/BBC/config/routes.rb",
 		"/home/user/Rails/QBurst/WFH/brokersoft/trunk/BBC/app/views/layouts/application.html.erb",
@@ -256,7 +294,6 @@
 		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/views/shared/_sidebar_contact.html.erb",
 		"/home/user/Rails/QBurst/BBC-codebase/app/controllers/contacts_controller.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/search/_condition_fields.html.erb",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/layouts/_admin.html.erb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/helpers/application_helper.rb",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/assets/javascripts/search.js.coffee",
 		"/home/user/Rails/Asian_trading_company/Asian_trading/app/controllers/registration_controller.rb",
@@ -282,20 +319,7 @@
 		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/controllers/application_controller.rb",
 		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/views/shared/_note.html.erb",
 		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/views/contacts/_note.html.erb",
-		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/views/contacts/_document.html.erb",
-		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/models/note.rb",
-		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/models/client_requirement.rb",
-		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/controllers/contacts_controller.rb",
-		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/views/client_requirements/_add_notes.html.erb",
-		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/views/client_requirements/new_notes.html.erb",
-		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/views/client_requirements/_add_actionitems.html.erb",
-		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/views/client_requirements/new_actionitems.html.erb",
-		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/controllers/client_requirements_controller.rb",
-		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/views/client_requirements/index.html.erb",
-		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/views/contacts/_add_notes.html.erb",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/config/application.rb",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/config/initializers/mime_types.rb",
-		"/home/user/Rails/Asian_trading_company/Asian_trading/app/views/admin/list_customers_manager.html.erb"
+		"/home/user/Rails/QBurst/brokersoft/trunk/BBC/app/views/contacts/_document.html.erb"
 	],
 	"find":
 	{
@@ -313,6 +337,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"number_field",
 			"lib",
 			"sdsdfsdf:",
 			"<div class=\"span1\">sdsdfsdf:</div>",
@@ -352,6 +377,7 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -359,7 +385,90 @@
 					"file": "config/routes.rb",
 					"settings":
 					{
-						"buffer_size": 1176,
+						"buffer_size": 1560,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1102,
+								1102
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 306.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/customers/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 5140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2804,
+								2804
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1105.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/assets/javascripts/customers.js",
+					"settings":
+					{
+						"buffer_size": 954,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								826,
+								826
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/assets/javascripts/bootstrap.js.coffee",
+					"settings":
+					{
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -372,37 +481,7 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 714.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/controllers/session_controller.rb",
-					"settings":
-					{
-						"buffer_size": 761,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								756,
-								756
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -415,7 +494,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -454,6 +533,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"brand",
+				"app/models/brand.rb"
+			],
+			[
+				"ite",
+				"app/models/item.rb"
+			],
 			[
 				"ro",
 				"config/routes.rb"
@@ -500,7 +587,7 @@
 		[
 			[
 				"",
-				"/home/user/Backbone/backbone.sublime-project"
+				"/home/user/Rails/QBurst/FEb-20-back/brokersoft/trunk/BBC/Feb-20BBC.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -509,6 +596,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 324.0,
+	"side_bar_width": 391.0,
 	"status_bar_visible": true
 }
